@@ -7,7 +7,6 @@ var items = new SteamApi.Items('steam-api-key', optionalSteamId);
 var id = '76561198125081821'
 
 var inv;
-// Steam API Backpack
 
 items.GetPlayerItems(730, id).done(function(result){
 
@@ -17,8 +16,7 @@ items.GetPlayerItems(730, id).done(function(result){
 });
 var names = inv;
 
-market.getItemsPrice(730, names, function(data) {
-    //console.log(data); 
+market.getItemsPrice(730, names, function(data) { 
     for(var i in names) {
         console.log(names[i] + ' median price: ' + data[names[i]]['median_price']);
     }
