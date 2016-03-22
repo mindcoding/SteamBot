@@ -4,10 +4,12 @@ var market = require('steam-market-pricing');
 
 var items = new SteamApi.Items('steam-api-key', optionalSteamId);
 
+var id = '76561198125081821'
+
 var Inv;
 // Steam API Backpack
 
-items.GetPlayerItems(730, 76561198125081821).done(function(result){
+items.GetPlayerItems(730, I'd).done(function(result){
 
   console.log(result);
   Inv = result;
