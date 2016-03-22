@@ -6,13 +6,13 @@ var items = new SteamApi.Items('steam-api-key', optionalSteamId);
 
 var id = '76561198125081821'
 
-var Inv;
+var inv;
 // Steam API Backpack
 
 items.GetPlayerItems(730, id).done(function(result){
 
   console.log(result);
-  Inv = result;
+  inv = result;
 
 });
 var names = inv;
