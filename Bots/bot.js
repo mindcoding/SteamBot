@@ -10,8 +10,8 @@ var steamID = new SteamID();
 var friends = new Steam.SteamFriends(client.client);
 
 client.logOn({
-	"accountName": "Lord_Minds_Assistant",
-	"password": "Jakeyy0902",
+	"accountName": "",
+	"password": "",
 });
 
 client.on("webSession", function(steamID, cookies){
